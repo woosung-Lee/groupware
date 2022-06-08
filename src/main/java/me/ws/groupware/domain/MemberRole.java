@@ -1,14 +1,23 @@
 package me.ws.groupware.domain;
 
-public enum MemberRole {
+import lombok.Getter;
+import lombok.RequiredArgsConstructor;
+import me.ws.groupware.config.enums.EnumMapperType;
 
-    ADMIN(1), User(2), GUEST(3);
+@RequiredArgsConstructor
+public enum MemberRole implements EnumMapperType {
 
-    private final int value;
+    ADMIN("관리자"),
+    USER("사용자"),
+    GUEST("게스트");
 
-    MemberRole(int value) {
-        this.value = value;
+
+    @Getter
+    private final String name;
+
+    @Override
+    public String getCode() {
+        return name();
     }
-
 
 }

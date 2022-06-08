@@ -22,6 +22,6 @@ public class Member {
 
     private MemberRole memberRole;
 
-    private List<Payments> payments = new ArrayList<>();
+    //private List<Payments> payments = new ArrayList<>();
 
 }

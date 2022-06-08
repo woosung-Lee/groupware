@@ -1,6 +1,7 @@
 package me.ws.groupware.domain;
 
 import lombok.Getter;
+import me.ws.groupware.config.enums.EnumMapperType;
 import org.hibernate.annotations.Tables;
 
 import javax.persistence.*;
